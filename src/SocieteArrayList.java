@@ -8,8 +8,6 @@ public class SocieteArrayList implements IGestion<Employe> {
     @Override
     public void ajouterEmploye(Employe o) {
         Emp.add(o);
-
-
     }
 
     @Override

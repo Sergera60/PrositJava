@@ -76,16 +76,17 @@ public class Employe {
             return false;
         }
 
-Employe emp =(Employe) obj ;
+if (obj instanceof Employe emp){
 return this.getNom().equals(emp.getNom()) &&
-        this.getIndentifiant() == emp.getIndentifiant() &&
-        this.getPrenom().equals(emp.getPrenom())
-        ;
+        this.getIndentifiant() == emp.getIndentifiant()
+        ;}
+return false ;
+
 
     }
 
     @Override
     public String toString() {
-        return "identifiant :"+getIndentifiant() +"nom:" + getNom()+ "prenom :"+getPrenom() + "departement:"+getDepartement()+ "grade :"+getGrade() ;
+        return "identifiant : "+getIndentifiant() +" nom: " + getNom()+ " prenom : "+getPrenom() + " departement: "+getDepartement()+ " grade :"+getGrade() ;
     }
 }
